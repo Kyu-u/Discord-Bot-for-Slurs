@@ -1,4 +1,3 @@
-# ── config.py ─────────────────────────────────────────────────────────────────
 # Edit this file before running the bot.
 
 # Your Discord bot token (from https://discord.com/developers/applications)
@@ -12,11 +11,6 @@ PREFIX = "!"
 # "base" is a good starting point for most machines.
 WHISPER_MODEL_SIZE = "base"
 
-# ── Slur list ─────────────────────────────────────────────────────────────────
-# Add the exact words/phrases you want to track (case-insensitive).
-# The bot ONLY counts occurrences — it never logs or stores the transcripts.
-SLUR_LIST = [
-    # Add your words here, e.g.:
-    # "word1",
-    # "word2",
-]
+# Takes list of slurs in slurs.txt
+with open("slurs.txt", "r", encoding="utf-8") as f:
+    SLUR_LIST = [line.strip() for line in f if line.strip()]

@@ -2,7 +2,7 @@
 # Edit this file before running the bot.
 
 # Your Discord bot token (from https://discord.com/developers/applications)
-BOT_TOKEN = "MTQ5NDU0NDMyNzMwMzQ5NTgxMA.GJZrH2.U957E5_LytIBGLers21l47aBcVZBINZIf9uQ7E"
+BOT_TOKEN = ""
 
 # Command prefix
 PREFIX = "!"
